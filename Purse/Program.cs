@@ -1,4 +1,5 @@
 ﻿using System;
+using Money;
 
 namespace Purse
 {
@@ -6,6 +7,10 @@ namespace Purse
     {
         static void Main(string[] args)
         {
+            MoneyService moneyService = new MoneyService();
+
+            moneyService.GetMoney();
+
             Console.ReadKey();
         }
     }
