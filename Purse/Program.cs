@@ -1,4 +1,5 @@
 ﻿using System;
+using CreditCard;
 
 namespace Purse
 {
@@ -6,6 +7,10 @@ namespace Purse
     {
         static void Main(string[] args)
         {
+            CreditCardService creditCardService = new CreditCardService();
+
+            creditCardService.GetCreditCard();
+
             Console.ReadKey();
         }
     }
